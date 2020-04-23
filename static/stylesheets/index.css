@@ -1,0 +1,11 @@
+#usernameform {
+  color: darkred;
+  text-align: center;
+}
+button {
+  background-color: rgba(255, 255, 94, 0.74);
+  border: solid black;
+}
+#formtitle {
+  text-align: center;
+}
