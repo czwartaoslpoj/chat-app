@@ -2,15 +2,42 @@
 <html>
 
 <head>
+<link type="text/css" rel="stylesheet" href="{{url_for('static', filename='stylesheets/index.css')}}"/>
     <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/socket.io/1.3.6/socket.io.min.js"></script>
     <script src="{{ url_for('static', filename='index.js') }}"></script>
     <title>Your chatroom</title>
 </head>
 
 <body>
-    <button id="suspicious-button">Click Here!</button>
-    <button id="suspicious-button2">Click Here!</button>
-    <span id="tag">This is a tag</span
+    <div class="wholeChat">
+    <div class= "grid2">
+    <ul id= "channelList">
+    </ul>
+    </div>
+    <div class= "grid3">
+    <input
+        id="channelName"
+        autocomplete="off"
+        autofocus
+        placeholder="Name of channel:"
+        type="text"
+      />
+      <br>
+      <br>
+      <button id= "addChannel">Add channel</button>
+      </div>
+    
+      
+<div class="grid5">
+<textarea id="chatbox">
+</textarea>
+</div>
+<div class="grid6">
+<input id="NewMessage" placeholder="write a message here"></input>
+<button id="sendAMessage">Send</button>
+</div>
+</div id="wholeChat">
+
 </body>
 
 </html>
